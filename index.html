@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUTU DOKU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TUTU DOKU</h1>
+        
+        <div class="game-options">
+            <div class="option-group">
+                <label for="grid-size">Grid Size:</label>
+                <select id="grid-size">
+                    <option value="4">4x4</option>
+                    <option value="6">6x6</option>
+                    <option value="9" selected>9x9</option>
+                    <option value="10">10x10</option>
+                </select>
+            </div>
+            
+            <div class="option-group">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            
+            <button id="new-game-btn">New Game</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+        
+        <div class="game-area">
+            <div id="sudoku-grid" class="sudoku-grid"></div>
+            
+            <div id="image-dock" class="image-dock">
+                <!-- Images will be added here dynamically -->
+            </div>
+            
+            <div id="trash-can" class="trash-can">
+                <img src="assets/images/trash.png" alt="Trash">
+            </div>
+        </div>
+        
+        <div id="win-message" class="win-message hidden">
+            <h2>Congratulations!</h2>
+            <p>You solved the puzzle!</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

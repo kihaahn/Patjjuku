@@ -1,0 +1,15 @@
+{
+  "name": "picture-sudoku",
+  "version": "1.0.0",
+  "description": "A picture-based Sudoku game with draggable elements",
+  "main": "index.html",
+  "scripts": {
+    "generate-images": "node create_placeholder_images.js"
+  },
+  "dependencies": {
+    "canvas": "^2.11.0"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "MIT"
+}
